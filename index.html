@@ -81,4 +81,12 @@
 </footer>
 
 </body>
-  </html>
+  </html><link rel="manifest" href="manifest.json">
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js')
+    .then(() => console.log('Service Worker registado'))
+    .catch(err => console.log('Erro no SW', err));
+}
+  </script>
