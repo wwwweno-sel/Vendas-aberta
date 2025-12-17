@@ -4,7 +4,7 @@
   "start_url": "/Vendas-aberta/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0d6efd",
+  "theme_color": "#25D366",
   "icons": [
     {
       "src": "icon.png",
