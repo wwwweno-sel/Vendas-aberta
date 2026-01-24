@@ -1,10 +1,9 @@
-{
-  "name": "Venda Já",
-  "short_name": "Venda Já",
-  "start_url": "./",
+ "name": "Vendas Aberta",
+  "short_name": "Vendas",
+  "start_url": "/Vendas-aberta/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#25D366",
+  "theme_color": "#0f9d58",
   "icons": [
     {
       "src": "icon-192.png",
