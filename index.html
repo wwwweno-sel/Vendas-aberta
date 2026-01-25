@@ -1,145 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vendas Aberta – Compre e Venda Online em Angola</title>
+<meta name="description" content="Vendas Aberta é um mercado online onde vendedores publicam anúncios grátis e compradores entram em contacto direto pelo WhatsApp.">
+<meta name="keywords" content="comprar e vender em Angola, anúncios online, classificados Angola, vender telemóveis, casas, carros">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0f9d58">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
 
-  <title>Vendas Aberta – Compre e Venda Online em Angola</title>
-
-  <meta name="description" content="Vendas Aberta é um mercado online onde vendedores publicam anúncios grátis e compradores entram em contacto direto pelo WhatsApp.">
-  <meta name="keywords" content="comprar e vender em Angola, anúncios online, classificados Angola, vender telemóveis, casas, carros">
-
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0f9d58">
-
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="icon-192.png">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #0f9d58;
-      color: white;
-      padding: 30px 15px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-    header p {
-      margin-top: 8px;
-      font-size: 18px;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    .button {
-      display: block;
-      width: 100%;
-      max-width: 420px;
-      margin: 15px auto;
-      padding: 15px;
-      text-align: center;
-      font-size: 18px;
-      font-weight: bold;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-    }
-    .free {
-      background: #25D366;
-    }
-    .paid {
-      background: linear-gradient(45deg, #ff9800, #ff5722);
-    }
-    section {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 30px;
-    }
-    ul, ol {
-      line-height: 1.7;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #666;
-    }
-    .highlight {
-      background: #fff8e1;
-      border-left: 5px solid #ff9800;
-      padding: 15px;
-      margin-top: 20px;
-      border-radius: 8px;
-    }
-  </style>
+<style>
+body {margin:0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333;}
+header {background: #0f9d58; color:white; padding: 30px 15px; text-align:center;}
+header h1 {margin:0; font-size:32px;}
+header p {margin-top:8px; font-size:18px;}
+.container {max-width:900px; margin:auto; padding:20px;}
+section {background:white; padding:20px; border-radius:12px; margin-top:30px;}
+.category {margin-bottom:25px;}
+.category h2 {color:#0f9d58; margin-bottom:10px;}
+.button-group {display:flex; gap:10px; flex-wrap:wrap; justify-content:center;}
+.button {flex:1 1 45%; padding:15px; text-align:center; font-size:16px; font-weight:bold; color:white; text-decoration:none; border-radius:10px;}
+.free {background:#25D366;}
+.paid {background: linear-gradient(45deg, #ff9800, #ff5722);}
+ol, ul {line-height:1.7;}
+.highlight {background:#fff8e1; border-left:5px solid #ff9800; padding:15px; margin-top:20px; border-radius:8px; color:#333;}
+footer {text-align:center; padding:15px; font-size:14px; color:#666;}
+@media(max-width:500px){.button{flex:1 1 100%;}}
+</style>
 </head>
-
 <body>
 
 <header>
-  <h1>Vendas Aberta</h1>
-  <p>O mercado online para vender e comprar em Angola</p>
+<h1>Vendas Aberta</h1>
+<p>O mercado online para vender e comprar em Angola</p>
 </header>
 
 <div class="container">
 
-  <!-- BOTÕES PRINCIPAIS -->
+<!-- Categorias com botões lado a lado -->
+<section class="category">
+<h2>📱 Telemóveis</h2>
+<div class="button-group">
   <a class="button free"
-     href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20no%20Vendas%20Aberta.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
-     target="_blank">
-     📢 Publicar Anúncio Grátis
-  </a>
-
+     href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Telemóvel.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
+     target="_blank">📢 Grátis</a>
   <a class="button paid"
-     href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20no%20Vendas%20Aberta.%0APlano:%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
-     target="_blank">
-     ⭐ Anúncio Destaque (Mais Visibilidade)
-  </a>
-
-  <!-- COMO FUNCIONA -->
-  <section>
-    <h2>📌 Como funciona</h2>
-    <ol>
-      <li>Publique o seu anúncio gratuitamente</li>
-      <li>Compradores entram em contacto direto pelo WhatsApp</li>
-      <li>Negociação é feita entre comprador e vendedor</li>
-      <li>Destaque opcional para vender mais rápido</li>
-    </ol>
-
-    <div class="highlight">
-      ⚠️ <strong>Aviso importante:</strong><br>
-      O Vendas Aberta é apenas uma plataforma de anúncios.
-      Não vendemos produtos nem participamos das negociações.
-    </div>
-  </section>
-
-  <!-- CATEGORIAS -->
-  <section>
-    <h2>🛍️ Categorias</h2>
-    <ul>
-      <li>📱 Telemóveis</li>
-      <li>📺 Eletrodomésticos</li>
-      <li>👗 Roupas Femininas e Masculinas</li>
-      <li>🏠 Casas e Terrenos</li>
-      <li>🚗 Carros e Motorizadas</li>
-    </ul>
-  </section>
-
+     href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Telemóvel.%0APlano:%207%20dias%20-%203.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
+     target="_blank">⭐ Destaque – 3.000 Kz</a>
 </div>
+</section>
+
+<section class="category">
+<h2>👗 Roupas</h2>
+<div class="button-group">
+  <a class="button free"
+     href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Roupas.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
+     target="_blank">📢 Grátis</a>
+  <a class="button paid"
+     href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Roupas.%0APlano:%207%20dias%20-%202.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
+     target="_blank">⭐ Destaque – 2.000 Kz</a>
+</div>
+</section>
+
+<section class="category">
+<h2>📺 Eletrodomésticos</h2>
+<div class="button-group">
+  <a class="button free"
+     href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Eletrodomésticos.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
+     target="_blank">📢 Grátis</a>
+  <a class="button paid"
+     href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Eletrodomésticos.%0APlano:%207%20dias%20-%204.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
+     target="_blank">⭐ Destaque – 4.000 Kz</a>
+</div>
+</section>
+
+<section class="category">
+<h2>🏠 Casas/Terrenos</h2>
+<div class="button-group">
+  <a class="button free"
+     href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Casas/Terrenos.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
+     target="_blank">📢 Grátis</a>
+  <a class="button paid"
+     href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Casas/Terrenos.%0APlano:%207%20dias%20-%2010.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
+     target="_blank">⭐ Destaque – 10.000 Kz</a>
+</div>
+</section>
+
+<section class="category">
+<h2>🚗 Carros/Motorizadas</h2>
+<div class="button-group">
+  <a class="button free"
+     href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Carros/Motorizadas.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
+     target="_blank">📢 Grátis</a>
+  <a class="button paid"
+     href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Carros/Motorizadas.%0APlano:%207%20dias%20-%208.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
+     target="_blank">⭐ Destaque – 8.000 Kz</a>
+</div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section>
+<h2>📌 Como funciona</h2>
+<ol>
+  <li>Publique o seu anúncio gratuitamente</li>
+  <li>Compradores entram em contacto direto pelo WhatsApp</li>
+  <li>Negociação é feita entre comprador e vendedor</li>
+  <li>Destaque opcional para vender mais rápido</li>
+</ol>
+<div class="highlight">
+⚠️ <strong>Aviso:</strong> Vendas Aberta é apenas uma plataforma de anúncios. Não vendemos produtos nem participamos das negociações.
+</div>
+</section>
 
 <footer>
-  © 2026 Vendas Aberta — Plataforma de anúncios online
+© 2026 Vendas Aberta — Plataforma de anúncios online
 </footer>
 
 <script>
@@ -151,4 +127,4 @@ if ('serviceWorker' in navigator) {
 </script>
 
 </body>
-     </html> 
+  </html>
