@@ -11,6 +11,23 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon-192.png">
 
+<!-- FACEBOOK PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'SEU_PIXEL_ID_AQUI'); // substitua pelo seu Pixel ID
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"
+/></noscript>
+
 <style>
 body {margin:0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333;}
 header {background: #0f9d58; color:white; padding: 30px 15px; text-align:center;}
@@ -45,10 +62,12 @@ footer {text-align:center; padding:15px; font-size:14px; color:#666;}
 <div class="button-group">
   <a class="button free"
      href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Telemóvel.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
-     target="_blank">📢 Grátis</a>
+     target="_blank"
+     onclick="fbq('track', 'Lead', {categoria: 'Telemóvel'});">📢 Grátis</a>
   <a class="button paid"
      href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Telemóvel.%0APlano:%207%20dias%20-%203.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
-     target="_blank">⭐ Destaque – 3.000 Kz</a>
+     target="_blank"
+     onclick="fbq('track', 'Lead', {categoria: 'Telemóvel Destaque'});">⭐ Destaque – 3.000 Kz</a>
 </div>
 </section>
 
@@ -57,10 +76,12 @@ footer {text-align:center; padding:15px; font-size:14px; color:#666;}
 <div class="button-group">
   <a class="button free"
      href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Roupas.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
-     target="_blank">📢 Grátis</a>
+     target="_blank"
+     onclick="fbq('track', 'Lead', {categoria: 'Roupas'});">📢 Grátis</a>
   <a class="button paid"
      href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Roupas.%0APlano:%207%20dias%20-%202.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
-     target="_blank">⭐ Destaque – 2.000 Kz</a>
+     target="_blank"
+     onclick="fbq('track', 'Lead', {categoria: 'Roupas Destaque'});">⭐ Destaque – 2.000 Kz</a>
 </div>
 </section>
 
@@ -69,10 +90,12 @@ footer {text-align:center; padding:15px; font-size:14px; color:#666;}
 <div class="button-group">
   <a class="button free"
      href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Eletrodomésticos.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
-     target="_blank">📢 Grátis</a>
+     target="_blank"
+     onclick="fbq('track', 'Lead', {categoria: 'Eletrodomésticos'});">📢 Grátis</a>
   <a class="button paid"
      href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Eletrodomésticos.%0APlano:%207%20dias%20-%204.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
-     target="_blank">⭐ Destaque – 4.000 Kz</a>
+     target="_blank"
+     onclick="fbq('track', 'Lead', {categoria: 'Eletrodomésticos Destaque'});">⭐ Destaque – 4.000 Kz</a>
 </div>
 </section>
 
@@ -81,10 +104,12 @@ footer {text-align:center; padding:15px; font-size:14px; color:#666;}
 <div class="button-group">
   <a class="button free"
      href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Casas/Terrenos.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
-     target="_blank">📢 Grátis</a>
+     target="_blank"
+     onclick="fbq('track', 'Lead', {categoria: 'Casas'});">📢 Grátis</a>
   <a class="button paid"
      href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Casas/Terrenos.%0APlano:%207%20dias%20-%2010.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
-     target="_blank">⭐ Destaque – 10.000 Kz</a>
+     target="_blank"
+     onclick="fbq('track', 'Lead', {categoria: 'Casas Destaque'});">⭐ Destaque – 10.000 Kz</a>
 </div>
 </section>
 
@@ -93,10 +118,12 @@ footer {text-align:center; padding:15px; font-size:14px; color:#666;}
 <div class="button-group">
   <a class="button free"
      href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Carros/Motorizadas.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
-     target="_blank">📢 Grátis</a>
+     target="_blank"
+     onclick="fbq('track', 'Lead', {categoria: 'Carros'});">📢 Grátis</a>
   <a class="button paid"
      href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Carros/Motorizadas.%0APlano:%207%20dias%20-%208.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
-     target="_blank">⭐ Destaque – 8.000 Kz</a>
+     target="_blank"
+     onclick="fbq('track', 'Lead', {categoria: 'Carros Destaque'});">⭐ Destaque – 8.000 Kz</a>
 </div>
 </section>
 
@@ -128,26 +155,3 @@ if ('serviceWorker' in navigator) {
 
 </body>
   </html>
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', 'SEU_PIXEL_ID_AQUI');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-<a href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio"
-   target="_blank"
-   class="button free"
-   onclick="fbq('track', 'Lead', {categoria: 'Telemóvel'});">
-📢 Grátis
-</a>
