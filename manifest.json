@@ -1,15 +1,14 @@
 {
-  "name": "Vendas Aberta – Mercado Online",
-  "short_name": "Vendas",
-  "description": "Publique anúncios, venda produtos e encontre compradores em Angola. Sem intermediários.",
-  "start_url": "/Vendas-aberta/",
+  "name": "Venda Já",
+  "short_name": "VendaJá",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0f9d58",
+  "theme_color": "#2ecc71",
   "icons": [
     {
-      "src": "icon-192.png",
-      "sizes": "192x192",
+      "src": "venda.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
