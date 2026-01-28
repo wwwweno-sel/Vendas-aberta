@@ -1,9 +1,10 @@
-<link rel="manifest" href="manifest.json">
-<link rel="icon" href="icon-192.png">
-<meta name="theme-color" content="#0f9d58"><title>Vendas Aberta</title>
 
-  <!-- ÍCONE DO SITE ( aparece na página) -->
-  <<link rel="icon" type="image/png" href="venda.png">
+
+  <!-- Ícone do site (aba do navegador) -->
+<link rel="icon" type="image/png" href="venda.png">
+
+<!-- Manifest (PWA) -->
+<link rel="manifest" href="manifest.json">
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -31,7 +32,11 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"
 /></noscript>
-
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+  }
+</script>
 <style>
 body {margin:0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333;}
 header {background: #0f9d58; color:white; padding: 30px 15px; text-align:center;}
