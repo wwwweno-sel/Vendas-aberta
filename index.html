@@ -5,159 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Vendas Aberta – Compre e Venda Online em Angola</title>
-<link rel="icon" type="image/png" href="icon-192.png">
-<link rel="apple-touch-icon" href="icon-192.png">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#25D366">
-  <!-- FAVICON -->
-  <link rel="icon" href="venda.png" type="image/png">
+
+  <!-- SEO -->
+  <meta name="description" content="Vendas Aberta é um mercado online onde vendedores publicam anúncios grátis e compradores entram em contacto direto pelo WhatsApp.">
+  <meta name="keywords" content="comprar e vender em Angola, anúncios online, classificados Angola, vender telemóveis, casas, carros">
+  <meta name="robots" content="index, follow">
+
+  <!-- ÍCONE (USA SÓ ESTE) -->
+  <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
 
   <!-- PWA -->
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#0f9d58">
+  <meta name="theme-color" content="#25D366">
 
-  <meta name="description" content="Vendas Aberta é um mercado online onde vendedores publicam anúncios grátis e compradores entram em contacto direto pelo WhatsApp.">
-</head>
-<body>>
-<meta name="keywords" content="comprar e vender em Angola, anúncios online, classificados Angola, vender telemóveis, casas, carros">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0f9d58">
+  <!-- FACEBOOK PIXEL -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'SEU_PIXEL_ID_AQUI');
+  fbq('track', 'PageView');
+  </script>
 
-<!-- FACEBOOK PIXEL -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', 'SEU_PIXEL_ID_AQUI'); // substitua pelo seu Pixel ID
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"
-/></noscript>
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js');
-  }
-</script>
-<style>
-body {margin:0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333;}
-header {background: #0f9d58; color:white; padding: 30px 15px; text-align:center;}
-header h1 {margin:0; font-size:32px;}
-header p {margin-top:8px; font-size:18px;}
-.container {max-width:900px; margin:auto; padding:20px;}
-section {background:white; padding:20px; border-radius:12px; margin-top:30px;}
-.category {margin-bottom:25px;}
-.category h2 {color:#0f9d58; margin-bottom:10px;}
-.button-group {display:flex; gap:10px; flex-wrap:wrap; justify-content:center;}
-.button {flex:1 1 45%; padding:15px; text-align:center; font-size:16px; font-weight:bold; color:white; text-decoration:none; border-radius:10px;}
-.free {background:#25D366;}
-.paid {background: linear-gradient(45deg, #ff9800, #ff5722);}
-ol, ul {line-height:1.7;}
-.highlight {background:#fff8e1; border-left:5px solid #ff9800; padding:15px; margin-top:20px; border-radius:8px; color:#333;}
-footer {text-align:center; padding:15px; font-size:14px; color:#666;}
-@media(max-width:500px){.button{flex:1 1 100%;}}
-</style>
+  <style>
+    body {margin:0; font-family: Arial, sans-serif; background:#f4f4f4; color:#333;}
+    header {background:#0f9d58; color:white; padding:30px 15px; text-align:center;}
+    header h1 {margin:0; font-size:32px;}
+    header p {margin-top:8px; font-size:18px;}
+    section {background:white; padding:20px; border-radius:12px; margin:20px;}
+    .category h2 {color:#0f9d58;}
+    .button-group {display:flex; gap:10px; flex-wrap:wrap;}
+    .button {flex:1; padding:15px; text-align:center; font-weight:bold; color:white; text-decoration:none; border-radius:10px;}
+    .free {background:#25D366;}
+    .paid {background:linear-gradient(45deg,#ff9800,#ff5722);}
+    footer {text-align:center; padding:20px; font-size:14px; color:#666;}
+    @media(max-width:600px){.button{flex:100%;}}
+  </style>
 </head>
+
 <body>
 
 <header>
-<h1>Vendas Aberta</h1>
-<p>O mercado online para vender e comprar em Angola</p>
+  <h1>Vendas Aberta</h1>
+  <p>O mercado online para vender e comprar em Angola</p>
 </header>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Vendas Aberta</title>
-
-<!-- Categorias com botões lado a lado -->
 <section class="category">
 <h2>📱 Telemóveis</h2>
 <div class="button-group">
-  <a class="button free"
-     href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Telemóvel.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
-     target="_blank"
-     onclick="fbq('track', 'Lead', {categoria: 'Telemóvel'});">📢 Grátis</a>
-  <a class="button paid"
-     href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Telemóvel.%0APlano:%207%20dias%20-%203.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
-     target="_blank"
-     onclick="fbq('track', 'Lead', {categoria: 'Telemóvel Destaque'});">⭐ Destaque – 3.000 Kz</a>
+<a class="button free" href="https://wa.me/244959872934" target="_blank">📢 Grátis</a>
+<a class="button paid" href="https://wa.me/244959872934" target="_blank">⭐ Destaque – 3.000 Kz</a>
 </div>
 </section>
 
 <section class="category">
 <h2>👗 Roupas</h2>
 <div class="button-group">
-  <a class="button free"
-     href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Roupas.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
-     target="_blank"
-     onclick="fbq('track', 'Lead', {categoria: 'Roupas'});">📢 Grátis</a>
-  <a class="button paid"
-     href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Roupas.%0APlano:%207%20dias%20-%202.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
-     target="_blank"
-     onclick="fbq('track', 'Lead', {categoria: 'Roupas Destaque'});">⭐ Destaque – 2.000 Kz</a>
+<a class="button free" href="https://wa.me/244959872934" target="_blank">📢 Grátis</a>
+<a class="button paid" href="https://wa.me/244959872934" target="_blank">⭐ Destaque – 2.000 Kz</a>
 </div>
 </section>
 
 <section class="category">
 <h2>📺 Eletrodomésticos</h2>
 <div class="button-group">
-  <a class="button free"
-     href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Eletrodomésticos.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
-     target="_blank"
-     onclick="fbq('track', 'Lead', {categoria: 'Eletrodomésticos'});">📢 Grátis</a>
-  <a class="button paid"
-     href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Eletrodomésticos.%0APlano:%207%20dias%20-%204.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
-     target="_blank"
-     onclick="fbq('track', 'Lead', {categoria: 'Eletrodomésticos Destaque'});">⭐ Destaque – 4.000 Kz</a>
+<a class="button free" href="https://wa.me/244959872934" target="_blank">📢 Grátis</a>
+<a class="button paid" href="https://wa.me/244959872934" target="_blank">⭐ Destaque – 4.000 Kz</a>
 </div>
 </section>
 
-<section class="category">
-<h2>🏠 Casas/Terrenos</h2>
-<div class="button-group">
-  <a class="button free"
-     href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Casas/Terrenos.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
-     target="_blank"
-     onclick="fbq('track', 'Lead', {categoria: 'Casas'});">📢 Grátis</a>
-  <a class="button paid"
-     href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Casas/Terrenos.%0APlano:%207%20dias%20-%2010.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
-     target="_blank"
-     onclick="fbq('track', 'Lead', {categoria: 'Casas Destaque'});">⭐ Destaque – 10.000 Kz</a>
-</div>
-</section>
-
-<section class="category">
-<h2>🚗 Carros/Motorizadas</h2>
-<div class="button-group">
-  <a class="button free"
-     href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20-%20Carros/Motorizadas.%0AProduto:%0APreço:%0ALocalização:%0ATelefone:"
-     target="_blank"
-     onclick="fbq('track', 'Lead', {categoria: 'Carros'});">📢 Grátis</a>
-  <a class="button paid"
-     href="https://wa.me/244959872934?text=Olá,%20quero%20um%20ANÚNCIO%20DESTAQUE%20-%20Carros/Motorizadas.%0APlano:%207%20dias%20-%208.000%20Kz%0AProduto:%0ALocalização:%0ATelefone:"
-     target="_blank"
-     onclick="fbq('track', 'Lead', {categoria: 'Carros Destaque'});">⭐ Destaque – 8.000 Kz</a>
-</div>
-</section>
-
-<!-- COMO FUNCIONA -->
 <section>
 <h2>📌 Como funciona</h2>
 <ol>
-  <li>Publique o seu anúncio gratuitamente</li>
-  <li>Compradores entram em contacto direto pelo WhatsApp</li>
-  <li>Negociação é feita entre comprador e vendedor</li>
-  <li>Destaque opcional para vender mais rápido</li>
+<li>Publica grátis</li>
+<li>Contacto direto via WhatsApp</li>
+<li>Negociação entre comprador e vendedor</li>
+<li>Destaque opcional para vender mais rápido</li>
 </ol>
-<div class="highlight">
-⚠️ <strong>Aviso:</strong> Vendas Aberta é apenas uma plataforma de anúncios. Não vendemos produtos nem participamos das negociações.
-</div>
+<p><strong>Aviso:</strong> Vendas Aberta é apenas uma plataforma de anúncios.</p>
 </section>
 
 <footer>
@@ -166,59 +97,9 @@ footer {text-align:center; padding:15px; font-size:14px; color:#666;}
 
 <script>
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js')
-    .then(() => console.log('Service Worker registado'))
-    .catch(err => console.log('Erro no SW', err));
+  navigator.serviceWorker.register('sw.js');
 }
 </script>
 
 </body>
-  </html>
-https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20no%20Vendas%20Aberta
-📢 Tens algo para vender em Angola?
-
-No Vendas Aberta:
-✔️ Anuncie GRÁTIS
-✔️ Contacto direto pelo WhatsApp
-✔️ Destaque opcional para vender mais rápido
-
-👇 Clique e publique agoraVenda rápido no Vendas Aberta
-🚀 Publique seu anúncio grátis no Vendas Aberta e venda rápido pelo WhatsApp!  
-
-📱 Telemóveis | 👗 Roupas | 📺 Eletrodomésticos | 🏠 Casas  
-
-Clique no botão e fale direto com compradores!  
-📢 Grátis | ⭐ Destaque (pago)
-Perfeito 👍  
-Seu anúncio será publicado GRATUITAMENTE.
-
-🔥 Para vender mais rápido, temos o ANÚNCIO DESTAQUE:
-
-1️⃣ 7 dias – 3.000 Kz  
-2️⃣ 15 dias – 5.000 Kz  
-3️⃣ 30 dias – 8.000 Kz  
-
-🏦 Pagamento via Multicaixa / Express  
-Conta: 244959872934  
-
-Após o pagamento, coloco seu anúncio em destaque no topo do site.🚀 Publique seu anúncio grátis no Vendas Aberta e venda rápido pelo WhatsApp!  
-
-📱 Telemóveis | 👗 Roupas | 📺 Eletrodomésticos | 🏠 Casas  
-
-Clique no botão e fale direto com compradores!  
-📢 Grátis | ⭐ Destaque (pago)
-VENDA JÁ 📲
-Publique seu anúncio grátisQuer vender rápido?
-Anuncie no Vendas Aberta📢 Tens algo para vender?
-
-📱 Telemóveis
-📺 TVs
-🏠 Casas
-🚗 Serviços
-
-No Vendas Aberta:
-✅ Publicação grátis
-🔥 Destaque para vender mais rápido
-💬 Contacto direto via WhatsApp
-
-👇 Clique e anuncie agora
+</html>
