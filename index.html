@@ -1,51 +1,42 @@
-</div><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Vendas Aberta – Compre e Venda Online em Angola</title>
+  <title>Vendas Aberta – Anuncie e venda pelo WhatsApp</title>
 
   <!-- SEO -->
-  <meta name="description" content="Vendas Aberta é um mercado online onde vendedores publicam anúncios grátis e compradores entram em contacto direto pelo WhatsApp.">
-  <meta name="keywords" content="comprar e vender em Angola, anúncios online, classificados Angola, vender telemóveis, casas, carros">
+  <meta name="description" content="Vendas Aberta é uma plataforma de anúncios online. Publique grátis e fale direto com compradores pelo WhatsApp.">
+  <meta name="keywords" content="comprar e vender em Angola, anúncios online, classificados, vender pelo WhatsApp">
   <meta name="robots" content="index, follow">
 
-  <!-- ÍCONE (USA SÓ ESTE) -->
-  <link rel="icon" type="image/png" href="icon-192.png">
-  <link rel="apple-touch-icon" href="icon-192.png">
+  <!-- OPEN GRAPH (Facebook / WhatsApp) -->
+  <meta property="og:title" content="Vendas Aberta – Anuncie e venda pelo WhatsApp">
+  <meta property="og:description" content="Publique anúncios grátis e fale direto com compradores pelo WhatsApp.">
+  <meta property="og:image" content="https://vendas-aberta.github.io/icon-512.png">
+  <meta property="og:url" content="https://vendas-aberta.github.io">
+  <meta property="og:type" content="website">
 
-  <!-- PWA -->
+  <!-- PWA / ÍCONE (não bloqueia acesso) -->
+  <link rel="icon" href="icon-192.png">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#25D366">
 
-  <!-- FACEBOOK PIXEL -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', 'SEU_PIXEL_ID_AQUI');
-  fbq('track', 'PageView');
-  </script>
-
   <style>
     body {margin:0; font-family: Arial, sans-serif; background:#f4f4f4; color:#333;}
-    header {background:#0f9d58; color:white; padding:30px 15px; text-align:center;}
+    header {background:#25D366; color:white; padding:30px 15px; text-align:center;}
     header h1 {margin:0; font-size:32px;}
     header p {margin-top:8px; font-size:18px;}
-    section {background:white; padding:20px; border-radius:12px; margin:20px;}
-    .category h2 {color:#0f9d58;}
-    .button-group {display:flex; gap:10px; flex-wrap:wrap;}
-    .button {flex:1; padding:15px; text-align:center; font-weight:bold; color:white; text-decoration:none; border-radius:10px;}
+    .container {max-width:900px; margin:auto; padding:20px;}
+    section {background:white; padding:20px; border-radius:12px; margin-top:30px;}
+    h2 {color:#25D366;}
+    .buttons {display:flex; gap:12px; flex-wrap:wrap;}
+    .btn {flex:1 1 45%; text-align:center; padding:15px; border-radius:10px; font-weight:bold; color:white; text-decoration:none;}
     .free {background:#25D366;}
     .paid {background:linear-gradient(45deg,#ff9800,#ff5722);}
-    footer {text-align:center; padding:20px; font-size:14px; color:#666;}
-    @media(max-width:600px){.button{flex:100%;}}
+    footer {text-align:center; padding:15px; font-size:14px; color:#666;}
+    @media(max-width:600px){.btn{flex:1 1 100%;}}
   </style>
 </head>
 
@@ -53,216 +44,59 @@
 
 <header>
   <h1>Vendas Aberta</h1>
-  <p>O mercado online para vender e comprar em Angola</p>
+  <p>Publique anúncios e venda pelo WhatsApp</p>
 </header>
-<!-- ANÚNCIOS EM DESTAQUE -->
-<section style="
-  max-width:900px;
-  margin:30px auto;
-  padding:20px;
-  background:#fff8e1;
-  border-radius:14px;
-  border:2px solid #ff9800;
-">
 
-<h2 style="
-  text-align:center;
-  color:#ff9800;
-  margin-bottom:20px;
-">
-⭐ Anúncios em Destaque
-</h2>
+<div class="container">
 
-<!-- ANÚNCIO 1 -->
-<div style="
-  background:white;
-  padding:15px;
-  border-radius:10px;
-  margin-bottom:15px;
-  box-shadow:0 2px 6px rgba(0,0,0,0.1);
-">
-  <h3>📱 Telemóvel Samsung A32</h3>
-  <p>💰 Preço: 120.000 Kz</p>
-  <p>📍 Localização: Luanda</p>
-  <a href="https://wa.me/244959872934?text=Olá,%20vi%20o%20anúncio%20em%20DESTAQUE%20do%20Samsung%20A32"
-     target="_blank"
-     style="
-       display:block;
-       text-align:center;
-       background:#25D366;
-       color:white;
-       padding:12px;
-       border-radius:8px;
-       font-weight:bold;
-       text-decoration:none;
-     ">
-     💬 Contactar no WhatsApp
-  </a>
-</div>
-<div style="
-  background:white;
-  padding:15px;
-  border-radius:10px;
-  margin-bottom:10px;
-  box-shadow:0 2px 6px rgba(0,0,0,0.1);
-">
-  <h3>📺 TV Smart 43”</h3>
-  <p>💰 Preço: 250.000 Kz</p>
-  <p>📍 Localização: Benfica</p>
-  <a href="https://wa.me/244959872934?text=Olá,%20vi%20o%20anúncio%20em%20DESTAQUE%20da%20TV%2043"
-     target="_blank"
-     style="
-       display:block;
-       text-align:center;
-       background:#25D366;
-       color:white;
-       padding:12px;
-       border-radius:8px;
-       font-weight:bold;
-       text-decoration:none;
-     ">
-     💬 Contactar no WhatsApp
-  </a>
-</div>
-
-<p style="text-align:center; color:#555; font-size:14px;">
-🔥 Quer aparecer aqui? Escolha <strong>Anúncio Destaque</strong>
-</p>
-
-</section>
-<!-- FIM ANÚNCIOS EM DESTAQUE -->
-<section class="category">
-<h2>📱 Telemóveis</h2>
-<div class="button-group">
-<a class="button free" href="https://wa.me/244959872934" target="_blank">📢 Grátis</a>
-<a class="button paid" href="https://wa.me/244959872934" target="_blank">⭐ Destaque – 3.000 Kz</a>
-</div>
-</section>
-
-<section class="category">
-<h2>👗 Roupas</h2>
-<div class="button-group">
-<a class="button free" href="https://wa.me/244959872934" target="_blank">📢 Grátis</a>
-<a class="button paid" href="https://wa.me/244959872934" target="_blank">⭐ Destaque – 2.000 Kz</a>
-</div>
-</section>
-
-<section class="category">
-<h2>📺 Eletrodomésticos</h2>
-<div class="button-group">
-<a class="button free" href="https://wa.me/244959872934" target="_blank">📢 Grátis</a>
-<a class="button paid" href="https://wa.me/244959872934" target="_blank">⭐ Destaque – 4.000 Kz</a>
-</div>
+<section>
+  <h2>📱 Telemóveis</h2>
+  <div class="buttons">
+    <a class="btn free" href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20de%20Telemóvel" target="_blank">📢 Grátis</a>
+    <a class="btn paid" href="https://wa.me/244959872934?text=Olá,%20quero%20ANÚNCIO%20DESTAQUE%20de%20Telemóvel" target="_blank">⭐ Destaque</a>
+  </div>
 </section>
 
 <section>
-<h2>📌 Como funciona</h2>
-<ol>
-<li>Publica grátis</li>
-<li>Contacto direto via WhatsApp</li>
-<li>Negociação entre comprador e vendedor</li>
-<li>Destaque opcional para vender mais rápido</li>
-</ol>
-<p><strong>Aviso:</strong> Vendas Aberta é apenas uma plataforma de anúncios.</p>
+  <h2>👗 Roupas</h2>
+  <div class="buttons">
+    <a class="btn free" href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20de%20Roupas" target="_blank">📢 Grátis</a>
+    <a class="btn paid" href="https://wa.me/244959872934?text=Olá,%20quero%20ANÚNCIO%20DESTAQUE%20de%20Roupas" target="_blank">⭐ Destaque</a>
+  </div>
 </section>
 
+<section>
+  <h2>📺 Eletrodomésticos</h2>
+  <div class="buttons">
+    <a class="btn free" href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20de%20Eletrodomésticos" target="_blank">📢 Grátis</a>
+    <a class="btn paid" href="https://wa.me/244959872934?text=Olá,%20quero%20ANÚNCIO%20DESTAQUE%20de%20Eletrodomésticos" target="_blank">⭐ Destaque</a>
+  </div>
+</section>
+
+<section>
+  <h2>🏠 Casas e Terrenos</h2>
+  <div class="buttons">
+    <a class="btn free" href="https://wa.me/244959872934?text=Olá,%20quero%20publicar%20um%20anúncio%20de%20Casa/Terreno" target="_blank">📢 Grátis</a>
+    <a class="btn paid" href="https://wa.me/244959872934?text=Olá,%20quero%20ANÚNCIO%20DESTAQUE%20de%20Casa/Terreno" target="_blank">⭐ Destaque</a>
+  </div>
+</section>
+
+<section>
+  <h2>ℹ️ Como funciona</h2>
+  <ol>
+    <li>Publique o seu anúncio gratuitamente</li>
+    <li>Compradores falam direto consigo pelo WhatsApp</li>
+    <li>Negociação é direta entre comprador e vendedor</li>
+    <li>Anúncio destaque é opcional</li>
+  </ol>
+  <p><strong>Aviso:</strong> Vendas Aberta é apenas uma plataforma de anúncios. Não vendemos produtos nem participamos das negociações.</p>
+</section>
+
+</div>
+
 <footer>
-© 2026 Vendas Aberta — Plataforma de anúncios online
+  © 2026 Vendas Aberta — Plataforma de anúncios online
 </footer>
-📢 Tens algo para vender?
-Olá 👋 bem-vindo ao Vendas Aberta!
-
-📢 Aqui você pode anunciar GRÁTIS e vender pelo WhatsApp.
-
-Categorias:
-📱 Telemóveis
-👗 Roupas
-📺 Eletrodomésticos
-🏠 Casas
-🚗 Carros
-
-Para publicar o anúncio, envie:
-• Produto
-• Preço
-• Localização
-• Telefone
-
-🔥 Quer vender mais rápido?
-Temos ANÚNCIO DESTAQUE.
-Escreva: DESTAQUE
-No Vendas Aberta:
-✅ Publica o teu anúncio GRÁTIS
-💬 Fala direto com compradores no WhatsApp
-🔥 Destaque pago para vender mais rápido
-
-📱 Telemóveis | 👗 Roupas | 📺 Eletrodomésticos | 🏠 Casas
-
-👇 Clique e anuncie agora
-<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js');
-}
-</script>
 
 </body>
 </html>
-Olá 👋 obrigado pelo contacto!
-
-✅ O seu anúncio pode ser publicado GRATUITAMENTE no Vendas Aberta.
-
-🔥 Para vender mais rápido, temos o ANÚNCIO DESTAQUE:
-
-1️⃣ 7 dias – 3.000 Kz
-2️⃣ 15 dias – 5.000 Kz
-3️⃣ 30 dias – 8.000 Kz
-
-🏦 Pagamento via Multicaixa / Express
-Conta: 244959872934
-
-Após o pagamento, o anúncio fica em destaque no topo do site 👍📢 Tens algo para vender em Angola?
-
-No Vendas Aberta:
-✅ Anuncie GRÁTIS
-🔥 Destaque para vender mais rápido
-💬 Contacto direto via WhatsApp
-
-👇 Clique e publique agora
-🔥 ANÚNCIO DESTAQUE – MAIS VISIBILIDADE
-
-Seu anúncio fica no topo do site e recebe mais contactos.
-
-Planos:
-1️⃣ 7 dias – 3.000 Kz
-2️⃣ 15 dias – 5.000 Kz
-3️⃣ 30 dias – 8.000 Kz
-
-🏦 Pagamento via Multicaixa / Express
-Conta: 244959872934
-
-Após o pagamento, o anúncio é destacado imediatamente 👍
-Perfeito 👍
-Olá 👋 seja bem-vindo ao Vendas Aberta!
-
-Aqui funciona assim:
-✅ O anúncio normal é GRATUITO
-💬 Compradores falam direto contigo pelo WhatsApp
-
-🔥 Se quiser vender mais rápido, temos ANÚNCIO DESTAQUE.
-Quer que eu te explique?
-O ANÚNCIO DESTAQUE fica no topo do site e recebe mais contactos.
-
-Planos:
-1️⃣ 7 dias – 3.000 Kz
-2️⃣ 15 dias – 5.000 Kz
-3️⃣ 30 dias – 8.000 Kz
-
-Pagamento via Multicaixa ou Express.
-Qual plano prefere?
-Sem problema 😊
-O anúncio grátis continua ativo.
-
-Se quiser vender mais rápido, é só me chamar aqui.
-Sim 👍
-Somos apenas a plataforma.
-Comprador e vendedor falam direto.
-Sem intermediários.
